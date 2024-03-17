@@ -25,3 +25,8 @@ replay_pid*
 # Outputs
 count.txt
 countPares.txt
+
+# "En el sistema operativo macOS de Apple, .DS_Store es un archivo
+# que almacena atributos personalizados de la carpeta que lo contiene,
+# como la posición de los iconos o la imagen de fondo"
+*.DS_Store
