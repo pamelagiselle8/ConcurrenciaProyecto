@@ -8,7 +8,7 @@ El dataset utilizado en este proyecto:
 https://www.kaggle.com/datasets/jerseyneo/reddit-adhd-dataset
 
 
-Descomprimimos el archivo zip y de los archivos csv, utilizamos el archivo ADHD-comment.csv
+Descomprimimos el archivo zip y de los archivos csv, estaremos utilizando el archivo ADHD-comment.csv
 
 > Main.java : Actualizar la ruta al dataset a preprocesar (en este caso ruta absoluta del archivo ADHD-comment.csv que descargamos), y la ruta al directorio donde se guardará el dataset preprocesado (las rutas se almacenan en las variables rawDataset y finalDataset, respectivamente).
 
@@ -35,8 +35,7 @@ Descomprimimos el archivo zip y de los archivos csv, utilizamos el archivo ADHD-
   cd /ruta_al_proyecto/ConcurrenciaProyecto/WordCount
   export HADOOP_CLASSPATH=$(hadoop classpath)
 ```
-Para verificar que se hizo exitosamente, corremos:
-  `echo $HADOOP_CLASSPATH`
+  Para verificar que se hizo exitosamente, corremos: `echo $HADOOP_CLASSPATH`
 
 2. Creamos dos carpetas donde se guardarán los outputs de los WordCounters:
 ```
@@ -70,7 +69,7 @@ Repetimos el procedimiento, esta vez para el WordCount de pares de palabras:
   hadoop jar /ruta_al_proyecto/ConcurrenciaProyecto/WordCounter/wordcountpares.jar WordCountPares /ProyectoConcu/Dataset /OutputPares
 ```
 
-## Descargamos ambos outputs de los WordCounters desde Hadoop (se encuentran en las carpetas Output y OutputPares)
+## Descargamos ambos outputs de los WordCounters desde Hadoop y le agregamos la extensión .txt (se encuentran en las carpetas Output y OutputPares con el nombre de part-r-00000)
 
 ## Procedimiento Frequency Analyzer
 > /ConcurrenciaProyecto/Preprocesamiento/src/preprocesamiento/freqAnalyzer.java
