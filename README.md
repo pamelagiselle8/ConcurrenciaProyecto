@@ -46,7 +46,7 @@ Descomprimimos el archivo zip y de los archivos csv, estaremos utilizando el arc
 > Nota: Necesitaremos compilar los programas de WordCount con la versión 8 de Java.
 
 ## Procedimiento WordCount (palabras individuales)
-> /ProyectoConcurrencia/WordCounter/WordCount.java
+> /ConcurrenciaProyecto/WordCounter/WordCount.java
 
 1. Compilar WordCount.java con el siguiente comando:
 ```
@@ -60,17 +60,17 @@ Descomprimimos el archivo zip y de los archivos csv, estaremos utilizando el arc
 
 4. Correr Word Counter
 ```
-  hadoop jar /ruta_al_proyecto/ConcurrenciaProyecto/WordCounter/wordcount.jar WordCount /ProyectoConcu/Dataset /Output
+  hadoop jar /ruta_al_proyecto/ConcurrenciaProyecto/WordCounter/wordcount.jar WordCount /Dataset /Output
 ```
 
 ## Procedimiento WordCountPares (pares de palabras)
-> /ProyectoConcurrencia/WordCounter/WordCount.java
+> /ConcurrenciaProyecto/WordCounter/WordCount.java
 
 Repetimos el procedimiento, esta vez para el WordCount de pares de palabras:
 ```
   /ruta_a_java_version_8/javac -classpath ${HADOOP_CLASSPATH} -d '/ruta_al_proyecto/ConcurrenciaProyecto/WordCounter/clasesPares' '/ruta_al_proyecto/ConcurrenciaProyecto/WordCounter/WordCountPares.java'
   jar -cvf wordcountpares.jar -C clasesPares/ .
-  hadoop jar /ruta_al_proyecto/ConcurrenciaProyecto/WordCounter/wordcountpares.jar WordCountPares /ProyectoConcu/Dataset /OutputPares
+  hadoop jar /ruta_al_proyecto/ConcurrenciaProyecto/WordCounter/wordcountpares.jar WordCountPares /Dataset /OutputPares
 ```
 
 Al terminar de correr ambos programas de WordCount, descargamos los outputs desde Hadoop, les ponemos un nombre que los diferencie y les agregamos la extensión .txt (se encuentran en las carpetas Output y OutputPares con el nombre de part-r-00000)
