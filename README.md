@@ -80,6 +80,7 @@ Luego, detenemos los daemons del cluster de Hadoop corriendo el siguiente comand
 
 ## Procedimiento Frequency Analyzer
 > /ConcurrenciaProyecto/Preprocesamiento/src/preprocesamiento/freqAnalyzer.java
+
 > freqAnalyzer.java : Actualizar la ruta a los outputs que acabamos de descargar (las rutas se almacenan en las variables wordcount y wordcountPares, respectivamente).
 
 1. En la clase freqAnalyzer.java existen dos métodos: uno que genera el top de las palabras individuales más frecuentes y el otro genera el top para los pares de palabras más frecuentes. En el main se hace el llamado a los dos métodos.
