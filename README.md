@@ -3,7 +3,11 @@
 > Nota sobre rutas absolutas: Debido a que algunos de los archivos utilizados en el proyecto eran muy pesados para ser subidos al repositorio, utilizamos rutas absolutas en los siguientes programas: Main.java, freqAnalyzer.java
 
 ## Descargar el Dataset
-El dataset utilizado en este proyecto: https://www.kaggle.com/datasets/jerseyneo/reddit-adhd-dataset
+El dataset utilizado en este proyecto:
+
+https://www.kaggle.com/datasets/jerseyneo/reddit-adhd-dataset
+
+
 Descomprimimos el archivo zip y de los archivos csv, utilizamos el archivo ADHD-comment.csv
 
 > Main.java : Actualizar la ruta al dataset a preprocesar (en este caso ruta absoluta del archivo ADHD-comment.csv que descargamos), y la ruta al directorio donde se guardará el dataset preprocesado (las rutas se almacenan en las variables rawDataset y finalDataset, respectivamente).
