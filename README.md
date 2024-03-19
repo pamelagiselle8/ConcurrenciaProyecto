@@ -54,10 +54,14 @@ Descomprimimos el archivo zip y de los archivos csv, estaremos utilizando el arc
 ```
 
 2. Juntar el output en un solo archivo jar:
-  `jar -cvf wordcount.jar -C clases/ .`
+```
+  jar -cvf wordcount.jar -C clases/ .
+```
 
-3. Correr Word Counter
-  `hadoop jar /ruta_al_proyecto/ConcurrenciaProyecto/WordCounter/wordcount.jar WordCount /ProyectoConcu/Dataset /Output`
+4. Correr Word Counter
+```
+  hadoop jar /ruta_al_proyecto/ConcurrenciaProyecto/WordCounter/wordcount.jar WordCount /ProyectoConcu/Dataset /Output
+```
 
 ## Procedimiento WordCountPares (pares de palabras)
 > /ProyectoConcurrencia/WordCounter/WordCount.java
