@@ -73,7 +73,10 @@ Repetimos el procedimiento, esta vez para el WordCount de pares de palabras:
   hadoop jar /ruta_al_proyecto/ConcurrenciaProyecto/WordCounter/wordcountpares.jar WordCountPares /Dataset /OutputPares
 ```
 
-Al terminar de correr ambos programas de WordCount, descargamos los outputs desde Hadoop, les ponemos un nombre que los diferencie y les agregamos la extensión .txt (se encuentran en las carpetas Output y OutputPares con el nombre de part-r-00000)
+Al terminar de correr ambos programas de WordCount, descargamos los outputs desde Hadoop, les ponemos un nombre que los diferencie y les agregamos la extensión .txt (se encuentran en las carpetas Output y OutputPares con el nombre de part-r-00000.
+
+Luego, detenemos los daemons del cluster de Hadoop corriendo el siguiente comando: `stop-all.sh`
+
 
 ## Procedimiento Frequency Analyzer
 > /ConcurrenciaProyecto/Preprocesamiento/src/preprocesamiento/freqAnalyzer.java
